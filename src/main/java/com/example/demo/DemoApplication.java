@@ -9,12 +9,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.socket.config.annotation.EnableWebSocket;
 
 import java.time.LocalDateTime;
 
 @SpringBootApplication
 @RestController
 @RequestMapping("/api")
+@EnableWebSocket
 public class DemoApplication {
 
 	@Autowired
